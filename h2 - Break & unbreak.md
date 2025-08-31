@@ -107,7 +107,7 @@ Nyt toistamalla a) kohdan vaiheet salasanaan ei päästä enää käsiksi:
 <img width="715" height="267" alt="image" src="https://github.com/user-attachments/assets/b3b6c240-eb18-4b4d-906c-c54a2163d368" />
 
 
-## c) Ratkaise 
+## c) Ratkaise dirfuzt-1
 
 Seuraavaa tehtävää varten tarvitsen ffuf -työkalua
 
@@ -118,9 +118,9 @@ Sanakirjana hyödynsin Daniel Miessler:n sanakirjaa (https://github.com/danielmi
 
 `wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt`
 
-Tämän jälkeen harjoitusmaalin lataus komennolla: `wget https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/`
+Tämän jälkeen harjoitusmaalin lataus komennolla: `wget https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/dirfuzt-1`
 
-Ja sitten vielä suoritusoikeudet: `chmod u+x `
+Ja sitten vielä suoritusoikeudet: `chmod u+x dirfuzt-1`
 
 Ennen tätä vaihetta irrotin virtuaalikoneeni verkosta varmuuden vuoksi
 
@@ -162,9 +162,9 @@ Ja toinen haluttu tulos wp-admin -hakemistosta:
 
 Alkajaisiksi siirryin hakemistoon `cd challenges/020-your-eyes-only/`
 
-Asennetaan virtualenv ja luodaan virtuaaliympäristö `sudo apt-get -y install virtualenv` & `virtualenv virtualenv/ -p python3 --system-site-packages`
+Asennetaan virtualenv `sudo apt-get -y install virtualenv` ja luodaan virtuaaliympäristö `virtualenv virtualenv/ -p python3 --system-site-packages`
 
-Aktivvoidaan juuri asennettu virtuaaliympäristö `source virtualenv/bin/activate`. Kyseisessä ympäristössä python -komennot ja pip asentavat paketit vain tähän ympäristöön.
+Aktivoidaan juuri asennettu virtuaaliympäristö `source virtualenv/bin/activate`. Kyseisessä ympäristössä python -komennot ja pip asentavat paketit vain tähän ympäristöön.
 
 Seuraavaksi etenin ohjeiden mukaan Djangon asennukseen: `cat requirements.txt` ja `pip install -r requirements.txt` ja tarkastin lopuksi ohjelmistoversion `django-admin --version`
 
@@ -206,7 +206,7 @@ Tämän jälkeen kirjautumissivulle ja testasin pääsenkö sisään.
 
 Admin dashboard -painikkeesta kuitenkin paljastui ainoastaan teksti '403 Forbidden'
 
-En päässyt etenemään, päätin selata vinkkejä ja sieltä se löytyi: "Some views are available to all. Some are available to logged in users. Some only for admin."
+En päässyt etenemään, päätin selata [vinkkejä](https://terokarvinen.com/hack-n-fix/#tips) ja sieltä se löytyi: "Some views are available to all. Some are available to logged in users. Some only for admin."
 
 Ei muuta kuin admin-console uudelleen URL -kenttään sisäänkirjautuneena käyttäjänä:
 
