@@ -50,19 +50,19 @@ Aloitin puhtaalta pöydältä, asentamalla uuden virtuaalikoneen debian001 aiemm
 
 Ensimmäisenä ajoin päivitykset: `sudo apt-get update`
 
-Jonka jälkeen wget, unzip ja micro asennus tulevia työvaiheita varten: `sudo apt-get -y install wget unzip micro`
+Jonka jälkeen wget, unzip ja micron asennus tulevia työvaiheita varten: `sudo apt-get -y install wget unzip micro`
 
-Sitten latasin tehtävänannon zippi tiedoston `wget https://terokarvinen.com/hack-n-fix/teros-challenges.zip`
+Sitten latasin tehtävänannon zip-tiedoston `wget https://terokarvinen.com/hack-n-fix/teros-challenges.zip`
 
 ja purin sen `unzip teros-challenges.zip`
 
 <img width="694" height="165" alt="image" src="https://github.com/user-attachments/assets/ee87b0d9-f4d8-4f00-a01a-0875fce21929" />
 
-Siirryin zippi kansiosta hakemistoon `cd challenges/010-staff-only/`
+Seuraavaksi siirryin hakemistoon `cd challenges/010-staff-only/`
 
 `python3 staff-only.py` antoi herjan: ModuleNotFoundError: No module named 'flask'
 
-Tehtävissä tarvittavien python3 flask ja flask-sqalchemy lisäosan asennus: `sudo apt-get -y install python3-flask python3-flask-sqlalchemy`
+Tehtävissä tarvittavien python3 flask ja flask-sqlalchemy lisäosan asennus: `sudo apt-get -y install python3-flask python3-flask-sqlalchemy`
 
 Ajoin uudelleen `python3 staff-only.py`
 
@@ -74,7 +74,7 @@ URL riville http://127.0.0.1:5000 ja pääsin seuraavalle sivulle:
 
 Syöttämällä kenttään pin-koodin '123' palauttaa sivusto "Your password is Somedude".
 
-Ensimmäinen ongelma: kenttä ei salli mitään muuta kuin numeroita. Siirryin developer tools:iin (pikanäppäin F12) tutkailemaan josko tämän pystyisi ohittamaan.
+Ensimmäinen ongelma: kenttä ei salli mitään muuta kuin numeroita. Siirryin Developer Toolsiin (pikanäppäin F12) tutkailemaan josko tämän pystyisi ohittamaan.
 
 Ctrl+Shift+C pikavalinnalla elementin valinta työkalu esiin ja klikkasin tuota syötekenttää.
 
@@ -122,7 +122,7 @@ Tämän jälkeen harjoitusmaalin lataus komennolla: `wget https://terokarvinen.c
 
 Ja sitten vielä suoritusoikeudet: `chmod u+x `
 
-Ennen tätä vaihetta irroitin virtuaalikoneeni verkosta varmuuden vuoksi
+Ennen tätä vaihetta irrotin virtuaalikoneeni verkosta varmuuden vuoksi
 
 <img width="816" height="512" alt="image" src="https://github.com/user-attachments/assets/c54c646b-5229-437b-8a4d-7d8ef2ba5776" />
 
@@ -166,7 +166,7 @@ Asennetaan virtualenv ja luodaan virtuaaliympäristö `sudo apt-get -y install v
 
 Aktivvoidaan juuri asennettu virtuaaliympäristö `source virtualenv/bin/activate`. Kyseisessä ympäristössä python -komennot ja pip asentavat paketit vain tähän ympäristöön.
 
-Seuraavaksi etenin ohjeiden mukaan Djangon asennukseen: `cat requirements.txt` ja `pip install -r requirements.txt` ja tarkastin lopuksi ohjelmisto version `django-admin --version`
+Seuraavaksi etenin ohjeiden mukaan Djangon asennukseen: `cat requirements.txt` ja `pip install -r requirements.txt` ja tarkastin lopuksi ohjelmistoversion `django-admin --version`
 
 <img width="804" height="446" alt="image" src="https://github.com/user-attachments/assets/942b08f4-b34c-4de1-b858-6cd3ff58c6c2" />
 
@@ -190,7 +190,7 @@ admin-console vaikuttaa erittäin lupaavalta, ja johdatti minut tänne:
 
 Päätin testata Register painiketta ja katsoa pääsenkö etenemään.
 
-syötin uuden käyttäjätunnuksen ja salasanan.
+Syötin uuden käyttäjätunnuksen ja salasanan.
 
 Tämän jälkeen kirjautumissivulle ja testasin pääsenkö sisään.
 
