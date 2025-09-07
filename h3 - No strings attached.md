@@ -105,7 +105,7 @@ XOR-menetelmä tuli esiin vastauksissa ja päätin paneutua siihen. ChatGPT:llä
 <br></br>
 
 Salasana on nyt piilotettu XOR-menetelmällä, joka tulee sanoista eXclusive OR [(Exclusive or - Wikipediassa)](https://en.wikipedia.org/wiki/Exclusive_or). Salasanan merkit on korvattu laskutoimituksella. Esim. kirjain s -> 's'^0x12 antaa jonkin ei luettavan tavuarvon.
-strcmp -funktio vertaa käyttäjän syötettä ja piilotettua salasanaa. 
+strcmp -funktio vertaa käyttäjän syötettä ja piilotettua salasanaa. Myöskään tämä menetelmä ei ole turvallinen, sillä se on helppo purkaa.
 
 Koodin kääntäminen onnistuu README.md ohjeiden mukaisesti:
 
