@@ -38,13 +38,13 @@ Tiedostosta ei paljastu mitään yllättävää. Näyttäisi olevan JPEG-muodoss
 
 ### Strings
 
-strings -komento antoi älyttömän pitkän listan, joten karsin tulokset 10 merkin pituuteen `strings -n 10 h1.jpg`
+strings -komento antoi älyttömän pitkän listan, joten karsin tuloksia hieman `strings -n 10 h1.jpg`
 
 <img width="471" height="761" alt="image" src="https://github.com/user-attachments/assets/53f2cb2c-016e-4a8e-9a65-8b67c0fd60a9" />
 
 <br></br>
 
-Tuosta litaniasta mielenkiintoisimmat tulokset karsittuna:
+Tuosta litaniasta mielenkiintoisimmat tulokset:
 
 <img width="391" height="708" alt="image" src="https://github.com/user-attachments/assets/56fde4d5-6191-4b54-b4a8-a9502897002e" />
 
@@ -100,7 +100,7 @@ Tutkin seuraavaksi mitä se sisältää:
 
 <img width="431" height="323" alt="image" src="https://github.com/user-attachments/assets/5b2fafeb-62ce-404f-80dc-6440d846387e" />
 
-Hakemistosta paljastui jotain mielenkiintoista; 494F5.zip joka paljastui Microsoft Word -tiedostoksi.
+Hakemistosta löytyi jotain mielenkiintoista; 494F5.zip josta paljastui Microsoft Word -tiedosto.
 
 <br></br>
 
